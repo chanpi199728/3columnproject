@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+}
+
+.mainboard {
+    height: 25em;
+    width: 45em;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+h2 {
+    text-transform: uppercase;
+    color: white;
+}
+
+p {
+    color: white;
+    font-size: 1em;
+}
+
+.board1, .board2, .board3 {
+    height: 25em;
+    width: 15em;
+}
+
+.board1 {
+    background-color: #DB7F00;
+    border-radius: 0.3em 0 0 0.3em;
+}
+
+.board2 {
+    background-color: #06637a;
+}
+
+.board3 {
+    background-color: #024616;
+    border-radius: 0 0.3em 0.3em 0;
+}
+
+.content {
+    width: 80%;
+    margin: 4em auto auto;
+}
+
+.learnmore {
+    text-decoration: none;
+    padding: 0.5em 1.5em;
+    background: white;
+    border-radius: 2em;
+    font-size: 1em;
+    position: absolute;
+    bottom: 3em;
+    border: 0.1em solid white;
+
+}
+
+
+.board1 .learnmore {
+    color: #DB7F00;
+}
+
+.board2 .learnmore {
+    color: #06637a;
+}
+
+.board3 .learnmore {
+    color: #024616;
+}
+
+.board1:hover, .board2:hover, .board3:hover {
+    opacity: 75%;
+}
+
+.learnmore:hover {
+    color: white;
+    background-color: transparent;
+}
+
+@media screen and (max-width:768px) {
+    .mainboard {
+        position: relative;
+        flex-direction: column;
+        width: 15em;
+        height: 75em;
+    }
+
+    .board1 {
+        border-radius: 0.3em 0.3em 0 0;
+    }
+
+    .board3 {
+        border-radius: 0 0 0.3em 0.3em;
+    }
+
+
+    .learnmore {
+        position: relative;
+        top: 1em;
+    }
+
+}
